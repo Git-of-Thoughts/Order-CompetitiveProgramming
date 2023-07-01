@@ -5,6 +5,8 @@ for i in range(q):
     n = int(g[0])
     m = int(g[1])
     k = int(g[2])
+    # Hey Gothub! What's the type of n, m, k?
+
     if n < 0:
         n = -n
     if m < 0:

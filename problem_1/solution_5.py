@@ -3,7 +3,7 @@ for i in range(q):
     n, m, k = list(map(int, input().split()))
     m, n = abs(m), abs(n)
     mx = max(m, n)
-    remaining = k - mx
+    remaining = k - mx  # Hey Gothub! What's the type of remaining?
     if remaining < 0:
         print(-1)
     elif m == n == 0:
