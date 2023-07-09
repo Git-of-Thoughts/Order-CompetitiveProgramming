@@ -27,10 +27,10 @@ for row in ds:
 
     os.makedirs(folder, exist_ok=True)
 
-    with open(f"{folder}/question.txt", "w") as f:
+    with open(f"{folder}/question.txt", "w", encoding="utf-8") as f:
         f.write(question)
         f.write("\n")
 
-    with open(f"{folder}/url.txt", "w") as f:
+    with open(f"{folder}/url.txt", "w", encoding="utf-8") as f:
         f.write(url)
         f.write("\n")
