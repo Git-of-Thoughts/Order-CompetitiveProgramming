@@ -5,8 +5,8 @@ from datasets import load_dataset
 
 CACHE_DIR = "F:/Users/kingh/.cache/huggingface/datasets"
 
-# This dataset has no train/valid/test split
-SPLIT = "train[:5]"
+# Only first 100
+SPLIT = "train[:100]"
 
 
 ds = load_dataset(
@@ -53,11 +53,21 @@ def main():
                 f"{folder}/solutions/solution_{i}.py", "w", encoding="utf-8"
             ) as f:
                 f.write(solution)
-                f.write("\n")
-        for i, io in enumerate(input_output):
-            with open(f"{folder}/input_output/io_{i}.txt", "w", encoding="utf-8") as f:
-                f.write(io)
-                f.write("\n")
+                # f.write("\n")
+
+        for i, (input, output) in enumerate(
+            zip(input_output["inputs"], input_output["outputs"])
+        ):
+            with open(
+                f"{folder}/input_output/input_{i}.txt", "w", encoding="utf-8"
+            ) as f:
+                f.write(input)
+                # f.write("\n")
+            with open(
+                f"{folder}/input_output/output_{i}.txt", "w", encoding="utf-8"
+            ) as f:
+                f.write(output)
+                # f.write("\n")
 
 
 if __name__ == "__main__":
