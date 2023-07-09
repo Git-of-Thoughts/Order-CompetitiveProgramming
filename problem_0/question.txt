@@ -4,7 +4,7 @@ Polycarp wants to offer his set of $n$ binary words to play a game "words". In t
 
 Word reversal is the operation of reversing the order of the characters. For example, the word "0111" after the reversal becomes "1110", the word "11010" after the reversal becomes "01011".
 
-Probably, Polycarp has such a set of words that there is no way to put them in the order correspondent to the game rules. In this situation, he wants to reverse some words from his set so that:  the final set of $n$ words still contains different words (i.e. all words are unique);  there is a way to put all words of the final set of words in the order so that the final sequence of $n$ words is consistent with the game rules.        
+Probably, Polycarp has such a set of words that there is no way to put them in the order correspondent to the game rules. In this situation, he wants to reverse some words from his set so that:  the final set of $n$ words still contains different words (i.e. all words are unique);  there is a way to put all words of the final set of words in the order so that the final sequence of $n$ words is consistent with the game rules. 
 
 Polycarp wants to reverse minimal number of words. Please, help him.
 
@@ -48,7 +48,7 @@ Input
 
 Output
 1
-3
+3 
 -1
 0
 
