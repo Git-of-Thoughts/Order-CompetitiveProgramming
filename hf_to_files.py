@@ -32,7 +32,7 @@ def main():
         os.makedirs(f"{folder}/solutions", exist_ok=True)
         os.makedirs(f"{folder}/input_output", exist_ok=True)
 
-        with open(f"{folder}/question.txt", "w", encoding="utf-8") as f:
+        with open(f"{folder}/question.md", "w", encoding="utf-8") as f:
             f.write(question)
             f.write("\n")
 
