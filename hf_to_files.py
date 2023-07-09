@@ -53,7 +53,7 @@ def main():
                 f"{folder}/solutions/solution_{i}.py", "w", encoding="utf-8"
             ) as f:
                 f.write(solution)
-                # f.write("\n")
+                f.write("\n")
 
         for i, (input, output) in enumerate(
             zip(input_output["inputs"], input_output["outputs"])

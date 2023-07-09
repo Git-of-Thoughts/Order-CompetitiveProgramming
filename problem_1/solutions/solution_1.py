@@ -1,9 +1,9 @@
-#
-import collections, atexit, math, sys, bisect
+#      
+import collections, atexit, math, sys, bisect 
 
 sys.setrecursionlimit(1000000)
 def getIntList():
-    return list(map(int, input().split()))
+    return list(map(int, input().split()))    
 
 try :
     #raise ModuleNotFoundError
@@ -26,7 +26,7 @@ if outId>0:
     dprint('use output', outId)
     sys.stdout = open('stdout'+ str(outId) + '.txt', 'w') #标准输出重定向至文件
     atexit.register(lambda :sys.stdout.close())     #idle 中不会执行 atexit
-
+    
 Q, = getIntList()
 for _ in range(Q):
     N, M, K  = getIntList()
@@ -39,6 +39,7 @@ for _ in range(Q):
     if M%2!= K%2:
         r-=1
     print(r)
+
 
 
 

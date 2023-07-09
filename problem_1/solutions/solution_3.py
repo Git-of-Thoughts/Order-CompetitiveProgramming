@@ -19,3 +19,4 @@ for i in range(q):
         otvet.append(k - 2)
 for i in otvet:
     print(i)
+

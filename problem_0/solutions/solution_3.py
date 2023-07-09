@@ -59,3 +59,4 @@ for _ in range(t):
     print(ans)
     if ans>0:
         print(" ".join(a))
+

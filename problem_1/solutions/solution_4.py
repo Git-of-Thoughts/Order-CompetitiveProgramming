@@ -11,3 +11,4 @@ for i in range(q):
         print(k - 1)
     else:
         print(k)
+

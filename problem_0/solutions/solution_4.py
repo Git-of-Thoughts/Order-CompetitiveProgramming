@@ -54,3 +54,4 @@ for i in range(t):
         else:
             print(0)
             print(*[])
+

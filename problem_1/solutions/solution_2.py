@@ -18,3 +18,4 @@ for i in range(q):
             d -= 1
     d += r
     print(d)
+

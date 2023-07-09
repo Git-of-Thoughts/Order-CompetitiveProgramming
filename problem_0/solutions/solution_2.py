@@ -53,7 +53,7 @@ for _ in range(N):
             _01, _10 = _10, _01
             _01_indexes, _10_indexes = _10_indexes, _01_indexes
 
-        _10_indexes = [x for x in _10_indexes if fulls[x][::-1] not in used]
+        _10_indexes = [x for x in _10_indexes if fulls[x][::-1] not in used] 
 
         need = ceildiv(_10-_01-1, 2)
         if len(_10_indexes) >= need:
@@ -64,4 +64,5 @@ for _ in range(N):
 
     # print("===")
         # print(ceil(abs(doms.count(('0', '1')) - doms.count(('1', '0'))) - 1, 2))
+
 
